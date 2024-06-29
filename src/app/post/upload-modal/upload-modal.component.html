@@ -1,0 +1,25 @@
+<!-- upload-modal.component.html -->
+<div class="button-group">
+  <!-- Media Upload Button -->
+  <button mat-raised-button class="media-upload-btn" (click)="openFileInput()">
+    <i class="fas fa-upload"></i> Upload Media
+  </button>
+
+  <!-- Image/Video Display -->
+  <div class="media-box" >
+    <img id="imgPreview"   [src]="mediaUrl" alt="Uploaded Media">
+  </div>
+
+  Caption/Text Input
+  <!-- <div class="caption-text-box">
+    <label for="caption">Caption / Text</label>
+    <textarea [(ngModel)]="caption" id="caption" placeholder="Enter caption"></textarea>
+  </div> -->
+
+  <!-- Post Button -->
+  <button mat-raised-button class="post-btn" (click)="postWithCaption()">
+    <i class="fas fa-share"></i> Post
+  </button>
+</div>
+
+<input type="file" id="mediaInput" (change)="onFileSelected($event)" style="display: none">

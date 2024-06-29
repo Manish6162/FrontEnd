@@ -1,0 +1,19 @@
+<header class="header-container">
+  <div class="icon-container">
+    <i class="fas fa-home"></i>
+    <span>Home</span>  
+  </div> 
+  <div class="icon-container">
+    <i class="fas fa-envelope"></i>
+    <span>Messaging</span>
+  </div>
+  <div class="button-container">
+    <button mat-raised-button (click)="Openpopup()">Start a new feed</button>
+  </div>
+  <div class="user-info">
+    <div class="profile-pic-container"> 
+      <img [src]="profilePicUrl" class="profile-pic" alt="Profile Picture">
+    </div> 
+    <span>Welcome, {{ username }}</span>
+  </div>
+</header>
